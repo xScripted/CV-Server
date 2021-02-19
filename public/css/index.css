@@ -1,0 +1,465 @@
+body {
+    margin: 0;
+    font-family: 'Josefin Sans', 'Montserrat', 'Rubik', 'Acme';
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    --main-color: rgb(0, 121, 6);
+}
+body > div {
+    width: 100%;
+    height: 100vh;
+}
+
+#pres {
+    color: white;
+    font-size: 13vh;
+    text-shadow: 0px 0px 20px rgb(0, 0, 0);
+}
+#presbg {
+    transition: .8s;
+    position: absolute;
+    background-image: url('../img/fondo8.jpg');
+    background-position-x: -300px;
+    background-position-y: -300px;
+    background-size: 120%;
+    z-index: -1;
+    filter: blur(2px);
+}
+#scrol {
+    position: fixed;
+    display: none;
+    width: 100px;
+    height: 50px;
+    margin-left: 90%;
+    margin-top: 20px;
+    font-size: 40px;
+    background-color: rgba(0, 0, 0, 0.315);
+    z-index: 100;
+}
+#items {
+    display: none;
+    position: absolute;
+    font-size: 30px;
+    background-color: transparent;
+    width: 100%;
+    top: 25vh;
+    height: 50vh;
+}
+#menu {
+    padding: 30px;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    z-index: 9;
+    overflow: hidden;
+}
+#mcont:hover {cursor: pointer}
+#mcont {
+    margin: 20px;
+    margin-left: 50px;
+    position: fixed;
+    width: 70px;
+    height: 80px;
+    z-index: 10;
+}
+
+ul {
+    list-style: none;
+    text-align:left;
+}
+li {
+    transition: 0.3s;
+    padding-top: 20px;
+    color: rgb(221, 221, 221);
+}
+li:hover {
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 30px;
+    color: white;
+}
+.barra{
+    position: absolute;
+    background-color: rgb(22, 22, 22);
+    width: 4px;
+    height: 50px;
+    border-radius: 20px;
+    margin: 5px;
+}
+
+#menu > div:nth-child(1){margin-left: 10px}
+#menu > div:nth-child(2){margin-left: 25px}
+#menu > div:nth-child(3){margin-left: 40px}
+#menu > div:nth-child(4){margin-left: 55px}
+
+#yearEst {
+    position: relative;
+    display: flex;
+    top: 0;
+    width: 50%;
+    font-size: 10vh;
+    background:  var(--main-color);
+    color: white;
+    z-index: 1;
+}
+#contEst {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+#yearEst span {
+    transition: 0.3s;
+    position: absolute;
+    opacity: 0;
+    align-self: center;
+    width: 100%;
+    white-space: nowrap; 
+}
+
+#estudios, #trabajos {
+    position: relative;
+    left: 50%;
+    width: 50%;
+    font-size: 5vh;
+    height: 600%;
+    background-color: white;
+}
+
+#estudios p, #trabajos p {
+    position: relative;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 70vh;
+    align-self: center;
+    text-align: center;
+}
+
+#estudios p:first-child {margin-top: 30vh;}
+
+#tecno {
+    position: relative;
+    top: 110vh;
+    height: 250vh;
+}
+
+
+.ball {
+    transition: .3s;
+    position: absolute;
+    margin-top: 40vh;
+    width: 10%;
+    height: 10%;
+    background-size: contain; 
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.gray {
+    filter: grayscale(100%);
+}
+.ball:hover {
+    transition: .3s;
+    filter: grayscale(0);
+}
+
+#bHtml {
+    background-image: url('../img/html5.png');
+    margin-left: 25%;
+}
+#bCss {
+    background-image: url('../img/css3.png');
+    margin-left: 55%;
+}
+#bJs {
+    background-image: url('../img/javascript.png');
+    margin-left: 40%;
+    margin-top: 50vh;
+}
+#bJava {
+    background-image: url('../img/java.png');
+    margin-left: 5%;
+}
+#bC {
+    background-image: url('../img/c.png');
+    margin-left: 5%;
+    margin-top: 85vh;
+}
+#bPython {
+    background-image: url('../img/python.png');
+    margin-left: 13%;
+    margin-top: 60vh;
+}
+#bPhp {
+    background-image: url('../img/php.png');
+    margin-left: 75%;
+    margin-top: 80vh;
+}
+#bMysql {
+    background-image: url('../img/mysql.png');
+    margin-left: 80%;
+    margin-top: 60vh;
+}
+#bMongoDB {
+    background-image: url('../img/mongodb.png');
+    margin-left: 45%;
+    margin-top: 80vh;
+}
+#bBs {
+    background-image: url('../img/bootstrap.png');
+    margin-left: 70%;
+}
+
+#bAngular {
+    background-image: url('../img/angular.png');
+    margin-left: 30%;
+    margin-top: 75vh;
+}
+
+#bGsap {
+    background-image: url('../img/gsap.png');
+    margin-left: 60%;
+    margin-top: 70vh;
+}
+
+#bJquery {
+    background-image: url('../img/jquery.png');
+    margin-left: 20%;
+    margin-top: 95vh;
+}
+#bD3{
+    background-image: url('../img/vue.png');
+    margin-left: 45%;
+    margin-top: 98vh;
+}
+#bSocketio {
+    background-image: url('../img/socketio.jpg');
+    margin-left: 65%;
+    margin-top: 105vh;
+}
+
+#bWordpress{
+    background-image: url('../img/wordpress.png');
+    margin-left: 85%;
+    width: 5%;
+    height: 5%;
+    margin-top: 95vh;
+}
+
+
+/* IDIOMAS */
+#idiomas {
+    background-color:  var(--main-color);;
+    margin-top: 100vh;
+    overflow: hidden;
+    height: 90vh;
+    z-index: 10;
+}
+
+#idiblue {
+    opacity: 0;
+    position: absolute;
+    font-size: 25vh;
+    color: var(--main-color);
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 0vh;
+    z-index: -1;
+}
+#dWhite {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 10vh;
+    margin-top: 10vh;
+    z-index: -1;
+}
+#idiomas > p {
+    position: relative;
+    font-size: 25vh;
+    color: white;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: -10vh;
+}
+
+#graficos {
+    display: grid;
+    width: 70%;
+    height: 70%;
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: white;
+    font-size: 4vh;
+    text-align: center;
+    margin-top: 6vh;
+}
+
+#graficos > div {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 8fr 1fr 1fr;
+    align-items: end;
+    width: 100%;
+    grid-gap: 5vh; 
+}
+
+#graficos > div > div {
+    width: 100%;
+    height: 100%;
+}
+
+.loadBar {
+    margin: auto;
+    width: 20%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.loadBar > div {
+    position: relative;
+    width: 10%;
+    height: 100%;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    top: 99%;
+}
+
+/* TRABAJOS */
+
+#trabajos {
+    left: 0 !important;
+    height: 500vh;
+}
+
+#trabajos img {
+    width: 15vh;
+}
+
+/* PROYECTOS */
+
+#proyectos {
+    height: 500vh;
+}
+#proyectos h1 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 5vh;
+    font-size: 10vh;
+}
+
+#v1 {
+    position: absolute;
+    border: 2px solid black;
+    transform: skewX(-10deg);
+    transform: skewY(-10deg);
+    width: 30%;
+    margin-left: -40%;
+    margin-top: 40vh;
+    box-shadow: -10px 10px 30px 10px rgba(0, 0, 0, 0.568), inset 0 0 30px 10px rgb(12, 8, 8);
+}
+
+#v2 {
+    position: absolute;
+    border: 2px solid black;
+    transform: skewX(10deg);
+    transform: skewY(10deg);
+    width: 30%;
+    margin-left: 5%;
+    margin-top: 120vh;
+    box-shadow: 10px 10px 30px 10px rgba(0, 0, 0, 0.568), inset 0 0 30px 10px rgb(12, 8, 8);
+}
+
+#proyectos > p:nth-of-type(1) {
+    position: absolute;
+    width: 30%;
+    font-size: 5vh;
+    margin-top: 50vh;
+    margin-left: 50%;
+    border: 5px solid;
+    padding: 4vh;
+}
+
+#proyectos > p:nth-of-type(2) {
+    position: absolute;
+    width: 20%;
+    font-size: 5vh;
+    margin-top: 130vh;
+    margin-left: 15%;
+    border: 5px solid;
+    padding: 4vh;
+}
+
+#proyectos > p:nth-of-type(3) {
+    position: absolute;
+    width: 40%;
+    font-size: 5vh;
+    margin-top: 290vh;
+    margin-left: 22%;
+    border: 5px solid;
+    padding: 4vh;
+}
+
+#v3 {
+    position: absolute;
+    margin-top: 200vh;
+    left: 50vh;
+    right: 0;
+    width: 80vh;
+    height: 70vh;
+}
+
+#v4 {
+    position: absolute;
+    margin-top: 340vh;
+    left: 20vh;
+    right: 0;
+    width: 70vh;
+    height: 35vh;
+    border: 2px solid black;
+    transform: skewX(-10deg);
+    transform: skewY(-10deg);
+    box-shadow: -10px 10px 30px 10px rgba(0, 0, 0, 0.568), inset 0 0 30px 10px rgb(12, 8, 8);
+}
+
+#proyectos > p:nth-of-type(4) {
+    position: absolute;
+    width: 25%;
+    font-size: 5vh;
+    margin-top: 320vh;
+    margin-left: 63%;
+    border: 5px solid;
+    padding: 4vh;
+}
+
+#proyectos > p:nth-of-type(5) {
+    position: absolute;
+    width: 50%;
+    font-size: 5vh;
+    margin-top: 420vh;
+    margin-left: 25%;
+    border: 5px solid;
+    padding: 4vh;
+}
+
+#contactame {
+    border: 2px solid black;
+    background-image: url('../img/grass.jpg');
+    background-attachment: fixed;
+    color: white;
+    font-size: 7vh;
+}
+
+#contactame > div {
+    text-shadow: 0px 0px 20px rgb(0, 0, 0);
+    margin-top: 25vh;
+}
+
+#contactame img {
+    width: 10vh;
+    margin: 50px;
+}
